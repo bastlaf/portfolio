@@ -66,5 +66,8 @@ let linksMenu = document.querySelectorAll('.navPcLink2');
 linksMenu.forEach(linkMenu => {
   linkMenu.addEventListener('click', () => {
     menu.style.right = "-70%";
+    span1.classList.remove('span1');
+    span2.classList.remove('span2');
+    span3.classList.remove('span3');
   });
 });
