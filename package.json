@@ -1,0 +1,15 @@
+{
+  "name": "portfolio-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "css": "sass --watch style.scss style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dart-sass": "^1.25.0",
+    "sass": "^1.35.2"
+  }
+}
