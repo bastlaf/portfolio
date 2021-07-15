@@ -65,17 +65,17 @@ typeText();
 
 
 $(document).ready(function(){
-  $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
+  $('#nav-icon3').click(function(){
 		$(this).toggleClass('open');
     $('.menu').toggleClass("openMenu");
 	});
 });
 
-
+let navIcon = document.querySelector('#nav-icon3');
 let linksMenu = document.querySelectorAll('.navPcLink2');  
   linksMenu.forEach(linkMenu => {
     linkMenu.addEventListener('click', () => {
       menu.classList.remove('openMenu');
-      
+      navIcon.classList.remove('open');
     });
   });
