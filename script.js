@@ -62,21 +62,20 @@ typeText();
 //     }
 // });
 
-// let linksMenu = document.querySelectorAll('.navPcLink2');
-
-// linksMenu.forEach(linkMenu => {
-//   linkMenu.addEventListener('click', () => {
-//     menu.style.right = "-70%";
-//     span1.classList.remove('span1');
-//     span2.classList.remove('span2');
-//     span3.classList.remove('span3');
-//   });
-// });
 
 
 $(document).ready(function(){
-	$('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
+  $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
 		$(this).toggleClass('open');
     $('.menu').toggleClass("openMenu");
 	});
 });
+
+
+let linksMenu = document.querySelectorAll('.navPcLink2');  
+  linksMenu.forEach(linkMenu => {
+    linkMenu.addEventListener('click', () => {
+      menu.classList.remove('openMenu');
+      
+    });
+  });
