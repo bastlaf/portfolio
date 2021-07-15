@@ -285,7 +285,7 @@ html {
             margin: 2rem 4rem;
             border-radius: 10px;
             border: 1px solid rgb(0, 0, 0);
-            transition: 0.4s ease-in-out;
+            // transition: 0.4s ease-in-out;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -372,7 +372,7 @@ html {
                 // background-color: #ffffffd2;
                 margin: 2rem 2rem 5rem 2rem;
                 padding: 1rem;
-                transition: all 0.5s ease-in-out;
+                // transition: all 0.5s ease-in-out;
                 background-position: bottom;
                 overflow: hidden;
                 &::before {
@@ -504,6 +504,7 @@ html {
         position: relative;
         z-index: 3;
     }
+
     h2 {
         font-family: 'Poppins', sans-serif;
         font-size: 2rem;
@@ -523,6 +524,8 @@ html {
             transform: translateX(-50%);
             bottom: 0;
         }
+
+
     }
     .boxContact {
         width: 72rem;
@@ -539,6 +542,7 @@ html {
             text-decoration: none;
         
         }
+
         .cardContact {
             min-width: 10rem;
             min-height: 5rem;
@@ -547,17 +551,14 @@ html {
             margin: 2rem 2rem;
             border-radius: 10px;
             border: 1px solid rgb(0, 0, 0);
-            transition: 0.4s ease-in-out;
             display: flex;
             text-decoration: none;
-
             padding: 0.5rem 0rem 0.5rem 1rem;
             align-items: center;
+            position: relative;
             &:hover {
-                transform: translateY(-5px);
-                -webkit-box-shadow: 0px 12px 45px 0px rgb(41, 41, 41);
-                -moz-box-shadow: 0px 12px 45px 0px rgb(41, 41, 41);
-                box-shadow: 0px 12px 45px 0px rgb(41, 41, 41);
+                animation: test1 0.3s ease-in-out forwards;
+                // background-color: rgb(125, 126, 148);
             }
             img {
                 height: 4rem;
@@ -587,25 +588,53 @@ html {
             margin: 2rem 2rem;
             border-radius: 10px;
             border: 1px solid rgb(0, 0, 0);
-            transition: 0.4s ease-in-out;
+            // transition: 0.4s ease-in-out;
             display: flex;
             justify-content: space-evenly;
             padding: 0.5rem 0;
             align-items: center;
             &:hover {
-                transform: translateY(-5px);
-                -webkit-box-shadow: 0px 12px 45px 0px rgb(41, 41, 41);
-                -moz-box-shadow: 0px 12px 45px 0px rgb(41, 41, 41);
-                box-shadow: 0px 12px 45px 0px rgb(41, 41, 41);
+                animation: test1 0.3s ease-in-out forwards;
             }
             img {
                 height: 4rem;
+                &:hover {
+                    animation: btnCard 0.8s ease-in-out infinite;
+                }
             }
         }
     }
 }
 
+@keyframes test1 {
+    from {
+        background-color: #ffffff;
+    }                   
+    to {
+        background-color: rgb(171, 176, 194);
+    }
+}
 
+@keyframes btnCard {
+    0% {
+        transform: rotate(0deg);
+    }
+    40% {
+        transform:rotate(5deg);
+    }
+    50% {
+        transform:rotate(-5deg);
+    }
+    60% {
+        transform: rotate(5deg);
+    }
+    70% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform:rotate(0deg);
+    }
+}
 
 
 

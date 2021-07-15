@@ -266,7 +266,6 @@ html {
   margin: 2rem 4rem;
   border-radius: 10px;
   border: 1px solid black;
-  transition: 0.4s ease-in-out;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -350,7 +349,6 @@ html {
   border-radius: 30px;
   margin: 2rem 2rem 5rem 2rem;
   padding: 1rem;
-  transition: all 0.5s ease-in-out;
   background-position: bottom;
   overflow: hidden;
 }
@@ -515,17 +513,14 @@ html {
   margin: 2rem 2rem;
   border-radius: 10px;
   border: 1px solid black;
-  transition: 0.4s ease-in-out;
   display: flex;
   text-decoration: none;
   padding: 0.5rem 0rem 0.5rem 1rem;
   align-items: center;
+  position: relative;
 }
 .sectionContact .boxContact .cardContact:hover {
-  transform: translateY(-5px);
-  -webkit-box-shadow: 0px 12px 45px 0px #292929;
-  -moz-box-shadow: 0px 12px 45px 0px #292929;
-  box-shadow: 0px 12px 45px 0px #292929;
+  animation: test1 0.3s ease-in-out forwards;
 }
 .sectionContact .boxContact .cardContact img {
   height: 4rem;
@@ -553,22 +548,49 @@ html {
   margin: 2rem 2rem;
   border-radius: 10px;
   border: 1px solid black;
-  transition: 0.4s ease-in-out;
   display: flex;
   justify-content: space-evenly;
   padding: 0.5rem 0;
   align-items: center;
 }
 .sectionContact .boxContact .cardContact2:hover {
-  transform: translateY(-5px);
-  -webkit-box-shadow: 0px 12px 45px 0px #292929;
-  -moz-box-shadow: 0px 12px 45px 0px #292929;
-  box-shadow: 0px 12px 45px 0px #292929;
+  animation: test1 0.3s ease-in-out forwards;
 }
 .sectionContact .boxContact .cardContact2 img {
   height: 4rem;
 }
+.sectionContact .boxContact .cardContact2 img:hover {
+  animation: btnCard 0.8s ease-in-out infinite;
+}
 
+@keyframes test1 {
+  from {
+    background-color: #ffffff;
+  }
+  to {
+    background-color: #abb0c2;
+  }
+}
+@keyframes btnCard {
+  0% {
+    transform: rotate(0deg);
+  }
+  40% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  60% {
+    transform: rotate(5deg);
+  }
+  70% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 #cursor {
   animation: blink 0.7s infinite ease;
 }

@@ -1,3 +1,4 @@
+
 var words = ["My portfolio !", "My world !", "My hobbies !", "My passions !"];
 
 // Select html element to insert text into

@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>cv</title>
+ 
 </head>
 <body>
     <button id="btn" class="logoHamburger">
@@ -40,10 +42,10 @@
             <div class="aboutLeft">
                 <span id="spanAbout"></span>
                 <h2>About Me</h2>
-                <p>Happy inhabitant of the city of Liège, Junior Web Developer. I always loved IT and technology. Before that, I had several experiences as a specialized educator, in which I was able to develop certain qualities such as listening to the needs of others, patience, punctuality, ... Passionate about photography, I think it can be a plus in the web development world, especially for the front-end.</p>
+                <p data-aos="fade-up" data-aos-duration="1500">Happy inhabitant of the city of Liège, Junior Web Developer. I always loved IT and technology. Before that, I had several experiences as a specialized educator, in which I was able to develop certain qualities such as listening to the needs of others, patience, punctuality, ... Passionate about photography, I think it can be a plus in the web development world, especially for the front-end.</p>
             </div>
             <div class="aboutRight">
-                <img src="./img/1740777-131313.svg" alt="" srcset="">
+                <img src="./img/1740777-131313.svg" alt="" srcset="" data-aos="fade-up-left"  data-aos-duration="1500">
             </div>
         </div>
     </section>
@@ -52,46 +54,48 @@
     <section class="sectionSkills" id="Skills">
         <img class="arrow" src="./img/arrow2.svg" alt="" srcset="">
         <span id="spanSkills"></span>
+
         <h2>My skills</h2>
+       
         <div class="skillsContainer">
-            <img class="oiseau" src="./img/1653866-131313.svg" alt="" srcset="">
-            <div class="cardSkill">
+            <img class="oiseau" src="./img/1653866-131313.svg" alt="" srcset="" data-aos="fade-up-right"  data-aos-duration="1500">
+            <div class="cardSkill" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
                 <img src="./img/html.svg" alt="" srcset="">
                 <h3>HTML</h3>
             </div>
-            <div class="cardSkill">
+            <div class="cardSkill" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                 <img src="./img/css.svg" alt="" srcset="">
                 <h3>CSS</h3>
             </div>
-            <div class="cardSkill">
+            <div class="cardSkill"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                 <img src="./img/sass.svg" alt="" srcset="">
                 <h3>Sass</h3>
             </div>
-            <div class="cardSkill">
+            <div class="cardSkill"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
                 <img src="./img/javascript.svg" alt="" srcset="">
                 <h3>Javascript</h3>
             </div>
-            <div class="cardSkill">
+            <div class="cardSkill"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
                 <img src="./img/php.svg" alt="" srcset="">
                 <h3>PHP</h3>
             </div>
-            <div class="cardSkill">
+            <div class="cardSkill"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
                 <img src="./img/wordpress.svg" alt="" srcset="">
                 <h3>WordPress</h3>
             </div>
-            <div class="cardSkill">
+            <div class="cardSkill"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
                 <img src="./img/jquery.svg" alt="" srcset="">
                 <h3>JQuery</h3>
             </div>
-            <div class="cardSkill">
+            <div class="cardSkill"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
                 <img src="./img/mysql.svg" alt="" srcset="">
                 <h3>MySQL</h3>
             </div>
-            <div class="cardSkill">
+            <div class="cardSkill"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
                 <img src="./img/react.svg" alt="" srcset="">
                 <h3>React</h3>
             </div>
-            <div class="cardSkill">
+            <div class="cardSkill"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900">
                 <img src="./img/git.svg" alt="" srcset="">
                 <h3>Git</h3>
             </div>
@@ -107,7 +111,7 @@
             <div class="containerProjets">
 
                 
-                <div class="boxProjet">
+                <div class="boxProjet" data-aos="zoom-in-down" data-aos-duration="1000">
                     <div class="boxTextProjet">
                         <img src="./img/Forum2.png" alt="" srcset="">
                         <div class="titreEtP">
@@ -131,7 +135,7 @@
                     </div>
                 </div>
                 
-                <div class="boxProjet">
+                <div class="boxProjet" data-aos="zoom-in-down" data-aos-duration="1000">
                     <div class="boxTextProjet">
                         <img src="./img/malabas2.png" alt="" srcset="">
                         <div class="titreEtP">
@@ -155,7 +159,7 @@
                     </div>
                 </div>
                 
-                <div class="boxProjet">
+                <div class="boxProjet" data-aos="zoom-in-down" data-aos-duration="1000">
                     <div class="boxTextProjet">
                         <img src="./img/mwenbwa.png" alt="" srcset="">
                         <div class="titreEtP">
@@ -177,7 +181,7 @@
                     </div>
                 </div>
                 
-                <div class="boxProjet">
+                <div class="boxProjet" data-aos="zoom-in-down" data-aos-duration="1000">
                     <div class="boxTextProjet">
                         <img src="./img/pomodoro.png" alt="" srcset="">
                         <div class="titreEtP">
@@ -198,30 +202,30 @@
                 </div>
             </div>
         </div>
-        <img class="brancheContact" src="./img/40028.svg" alt="" srcset="">
+        <img class="brancheContact" src="./img/40028.svg" alt="" srcset=""  data-aos="fade-up-right"  data-aos-duration="1500">
     </section>
 
     <section class="sectionContact" id="Contact">
-        <img class="oiseauxContact" src="./img/1836813.svg" alt="" srcset="">
+        <img class="oiseauxContact" src="./img/1836813.svg" alt="" srcset="" data-aos="fade-up-left"  data-aos-duration="1500">
         <img class="arrowContact" src="./img/svgBoucle.svg" alt="" srcset="">
         <span id="spanContact"></span>
        <h2>Contact</h2>
        <div class="boxContact">
-           <div class="cardContact">
+           <div class="cardContact" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
                <img src="./img/email-sketched-envelope-with-arroba-sign.svg" alt="" srcset="">
                <div class="contactText">
                    <h3>Mail :</h3>
                    <p>bastienlafalize@gmail.com</p>
                </div>
            </div>
-           <div class="cardContact">
+           <div class="cardContact" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
                 <img src="./img/tablet-computer-sketch.svg" alt="" srcset="">
                 <div class="contactText">
                     <h3>mobile :</h3>
                     <p>0479/02.11.07</p>
                 </div>
            </div>
-           <div class="cardContact">
+           <div class="cardContact" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
                <img src="./img/home-sketch.svg" alt="" srcset="">
                <div class="contactText">
                    <h3>Adress :</h3>
@@ -229,15 +233,15 @@
                </div>
            </div>
            <a href="./img/CVBastien.pdf" download="CV_Bastien">
-               <div class="cardContact">
-                    <img src="./img/download-sketch.svg" alt="" srcset="">
-                    <div class="contactText">
-                        <h3>CV :</h3>
-                        <p>Click for download</p>
-                    </div>
-               </div>
+            <div class="cardContact" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+                <img src="./img/download-sketch.svg" alt="" srcset="">
+                <div class="contactText">
+                    <h3>CV :</h3>
+                    <p>Click for download</p>
+                </div>
+            </div>
            </a>
-           <div class="cardContact2">
+           <div class="cardContact2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
                 <a href="https://www.linkedin.com/in/bastien-lafalize/" target="_blank">
                     <img src="./img/linkedin-sketched-social-logo.svg" alt="" srcset="">
                 </a>
@@ -251,8 +255,11 @@
        </div>
     </section>
         
-        
-        
-        <script src="script.js"></script>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+       
     </body>
     </html>
