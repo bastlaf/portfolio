@@ -42,33 +42,41 @@ typeText();
 
 
 
-let buttonHamburger = document.querySelector('#btn');
-let menu = document.querySelector('#menu');
-let span1 = document.querySelector('#span1');
-let span2 = document.querySelector('#span2');
-let span3 = document.querySelector('#span3');
+// let buttonHamburger = document.querySelector('#btn');
+// let menu = document.querySelector('#menu');
+// let span1 = document.querySelector('#span1');
+// let span2 = document.querySelector('#span2');
+// let span3 = document.querySelector('#span3');
 
-buttonHamburger.addEventListener('click', () => {
-    if (menu.style.right == "-70%") {
-        menu.style.right = "0";
-        span1.classList.add('span1');
-        span2.classList.add('span2');
-        span3.classList.add('span3');
-    } else {
-        menu.style.right = "-70%";
-        span1.classList.remove('span1');
-        span2.classList.remove('span2');
-        span3.classList.remove('span3');
-    }
-});
+// buttonHamburger.addEventListener('click', () => {
+//     if (menu.style.right == "-70%") {
+//         menu.style.right = "0";
+//         span1.classList.add('span1');
+//         span2.classList.add('span2');
+//         span3.classList.add('span3');
+//     } else {
+//         menu.style.right = "-70%";
+//         span1.classList.remove('span1');
+//         span2.classList.remove('span2');
+//         span3.classList.remove('span3');
+//     }
+// });
 
-let linksMenu = document.querySelectorAll('.navPcLink2');
+// let linksMenu = document.querySelectorAll('.navPcLink2');
 
-linksMenu.forEach(linkMenu => {
-  linkMenu.addEventListener('click', () => {
-    menu.style.right = "-70%";
-    span1.classList.remove('span1');
-    span2.classList.remove('span2');
-    span3.classList.remove('span3');
-  });
+// linksMenu.forEach(linkMenu => {
+//   linkMenu.addEventListener('click', () => {
+//     menu.style.right = "-70%";
+//     span1.classList.remove('span1');
+//     span2.classList.remove('span2');
+//     span3.classList.remove('span3');
+//   });
+// });
+
+
+$(document).ready(function(){
+	$('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
+		$(this).toggleClass('open');
+    $('.menu').toggleClass("openMenu");
+	});
 });
