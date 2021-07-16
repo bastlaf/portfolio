@@ -661,7 +661,7 @@ html {
             background-color: #1d1d1d;
             display: flex;
             text-decoration: none;
-            padding: 0.5rem 0rem 0.5rem 1rem;
+            padding: 0.5rem 1rem 0.5rem 1rem;
             align-items: center;
             position: relative;
             img {
@@ -686,12 +686,51 @@ html {
                 color: rgb(255, 255, 255);
             }
         }
-        .cardContact2 {
-            width: 64rem;
+        .aCV {
+            min-width: 10rem;
             min-height: 5rem;
-            max-width: 100%;
-            background-color: #1d1d1d;
+            width: 30rem;
             margin: 2rem 2rem;
+            border-radius: 10px;
+            background-color: #1d1d1d;
+            display: flex;
+            text-decoration: none;
+            align-items: center;
+            position: relative;
+            
+            .cardContactCV {
+                padding: 0.5rem 0rem 0.5rem 1rem;
+                display: flex;
+                width: 100%;
+                img {
+                    height: 4rem;
+                    color: white;
+                    margin-right: 2rem;
+                }
+                
+                h3 {
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 1.3rem;
+                    font-weight: 500;
+                    width: fit-content;
+                    color: rgb(255, 255, 255);
+                    
+                }
+                p {
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 1rem;
+                    font-weight: 300;
+                    width: fit-content;
+                    color: rgb(255, 255, 255);
+                }
+            }
+        }
+            .cardContact2 {
+                width: 64rem;
+                min-height: 5rem;
+                max-width: 100%;
+                background-color: #1d1d1d;
+                margin: 2rem 2rem;
             border-radius: 10px;
             border: 1px solid rgb(0, 0, 0);
             // transition: 0.4s ease-in-out;
@@ -830,6 +869,24 @@ html {
     .sectionContact .boxContact .cardContact {
         flex-direction: column;
         margin: 2rem 0;
+    }
+    .sectionContact .boxContact .aCV { 
+        margin: 2rem 0;
+    }
+    .sectionContact .boxContact .cardContactCV .contactText {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sectionContact .boxContact .aCV .cardContactCV img {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+    .sectionContact .boxContact .cardContactCV {
+        flex-direction: column;
+        margin: 0 0;
+        align-items: center;
+        justify-content: center;
     }
     .sectionContact .boxContact .cardContact img {
         margin-right: 0;

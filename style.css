@@ -605,7 +605,7 @@ html {
   background-color: #1d1d1d;
   display: flex;
   text-decoration: none;
-  padding: 0.5rem 0rem 0.5rem 1rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
   align-items: center;
   position: relative;
 }
@@ -622,6 +622,42 @@ html {
   color: white;
 }
 .sectionContact .boxContact .cardContact p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  width: fit-content;
+  color: white;
+}
+.sectionContact .boxContact .aCV {
+  min-width: 10rem;
+  min-height: 5rem;
+  width: 30rem;
+  margin: 2rem 2rem;
+  border-radius: 10px;
+  background-color: #1d1d1d;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  position: relative;
+}
+.sectionContact .boxContact .aCV .cardContactCV {
+  padding: 0.5rem 0rem 0.5rem 1rem;
+  display: flex;
+  width: 100%;
+}
+.sectionContact .boxContact .aCV .cardContactCV img {
+  height: 4rem;
+  color: white;
+  margin-right: 2rem;
+}
+.sectionContact .boxContact .aCV .cardContactCV h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  width: fit-content;
+  color: white;
+}
+.sectionContact .boxContact .aCV .cardContactCV p {
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
   font-weight: 300;
@@ -767,6 +803,28 @@ html {
   .sectionContact .boxContact .cardContact {
     flex-direction: column;
     margin: 2rem 0;
+  }
+
+  .sectionContact .boxContact .aCV {
+    margin: 2rem 0;
+  }
+
+  .sectionContact .boxContact .cardContactCV .contactText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sectionContact .boxContact .aCV .cardContactCV img {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .sectionContact .boxContact .cardContactCV {
+    flex-direction: column;
+    margin: 0 0;
+    align-items: center;
+    justify-content: center;
   }
 
   .sectionContact .boxContact .cardContact img {
