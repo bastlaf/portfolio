@@ -656,29 +656,26 @@ html {
             min-width: 10rem;
             min-height: 5rem;
             width: 30rem;
-            background-color: white;
             margin: 2rem 2rem;
             border-radius: 10px;
-            border: 1px solid rgb(0, 0, 0);
+            background-color: #1d1d1d;
             display: flex;
             text-decoration: none;
             padding: 0.5rem 0rem 0.5rem 1rem;
             align-items: center;
             position: relative;
-            &:hover {
-                animation: test1 0.3s ease-in-out forwards;
-                // background-color: rgb(125, 126, 148);
-            }
             img {
                 height: 4rem;
+                color: white;
                 margin-right: 2rem;
             }
+
             h3 {
                 font-family: 'Poppins', sans-serif;
                 font-size: 1.3rem;
                 font-weight: 500;
                 width: fit-content;
-                color: black;
+                color: rgb(255, 255, 255);
     
             }
             p {
@@ -686,14 +683,14 @@ html {
                 font-size: 1rem;
                 font-weight: 300;
                 width: fit-content;
-                color: black;
+                color: rgb(255, 255, 255);
             }
         }
         .cardContact2 {
             width: 64rem;
             min-height: 5rem;
             max-width: 100%;
-            background-color: white;
+            background-color: #1d1d1d;
             margin: 2rem 2rem;
             border-radius: 10px;
             border: 1px solid rgb(0, 0, 0);
@@ -702,9 +699,6 @@ html {
             justify-content: space-evenly;
             padding: 0.5rem 0;
             align-items: center;
-            &:hover {
-                animation: test1 0.3s ease-in-out forwards;
-            }
             img {
                 height: 4rem;
                 &:hover {
@@ -715,14 +709,6 @@ html {
     }
 }
 
-@keyframes test1 {
-    from {
-        background-color: #ffffff;
-    }                   
-    to {
-        background-color: rgb(171, 176, 194);
-    }
-}
 
 @keyframes btnCard {
     0% {
