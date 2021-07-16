@@ -807,7 +807,8 @@ html {
   }
 
   .sectionContact .boxContact .aCV {
-    margin: 2rem 0;
+    margin: 0;
+    height: fit-content;
   }
 
   .sectionContact .boxContact .cardContactCV .contactText {
